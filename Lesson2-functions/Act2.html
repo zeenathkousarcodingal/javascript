@@ -8,13 +8,17 @@
     <p id="demo"></p>
     <p id="demo1"></p>
     <script>
-
+      b=10;
       function myFunction() {
         var a = 4;
         document.getElementById("demo").innerHTML = a * a;
       } 
       document.getElementById("demo1").innerHTML = a;  
       //we get reference error - a is not defined in 16th line 
+
+            document.getElementById("demo1").innerHTML = b;
+            //No error  
+
     </script>
     
   </body>
